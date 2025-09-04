@@ -7,26 +7,37 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="./index.html">Portada</a>
-      <a href="./bitacora.html">Bitácora</a>
-      <a href="./erika.html">Erika</a>
-      <a href="./gonza.html">Gonza</a>
-      <a href="./mariano.html">Mariano</a>
-      <a href="./lean.html">Lean</a>
-    </nav>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">Equipo</a>
+
+      <!-- Botón hamburguesa controlado por JS -->
+      <button id="hamburger" class="hamburger" type="button"
+              aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+        <span class="hamburger-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Navegación principal">
+        <a href="./index.html">Portada</a>
+        <a href="./bitacora.html">Bitácora</a>
+        <a href="./erika.html">Erika</a>
+        <a href="./gonza.html" aria-current="page">Gonza</a>
+        <a href="./mariano.html">Mariano</a>
+        <a href="./lean.html">Lean</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <!-- TODO: tarjeta Gonza -->
+  <main id="app" class="container page-content">
+    <section class="section">
+      <h2>Título de sección</h2>
+      <p><!-- TODO: contenido --></p>
     </section>
   </main>
 
   <footer>
-    <small>© Equipo — TP01</small>
+    <small>© Equipo 14 — TP01</small>
   </footer>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
-

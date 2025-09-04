@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
@@ -8,27 +8,65 @@
   
 </head>
 <body>
-  <header>
-    <h1>Portada — Equipo</h1>
-    <nav>
-      <a href="./index.html">Portada</a>
-      <a href="./bitacora.html">Bitácora</a>
-      <a href="./erika.html">Erika</a>
-      <a href="./gonza.html">Gonza</a>
-      <a href="./mariano.html">Mariano</a>
-      <a href="./lean.html">Lean</a>
-    </nav>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">Equipo</a>
+
+      <!-- Botón hamburguesa controlado por JS -->
+      <button id="hamburger" class="hamburger" type="button"
+              aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+        <span class="hamburger-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Navegación principal">
+        <a href="./index.html" aria-current="page">Portada</a>
+        <a href="./bitacora.html">Bitácora</a>
+        <a href="./erika.html">Erika</a>
+        <a href="./gonza.html">Gonza</a>
+        <a href="./mariano.html">Mariano</a>
+        <a href="./lean.html">Lean</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <!-- TODO: portada -->
-    </section>
-  </main>
+  <main id="app" class="container page-content">
+    <section class="section">
+      <h2>Integrantes grupo 14</h2>
+      <p>Conocé al equipo del grupo 14. Cada tarjeta redirige a su página con más detalles.</p>
+      <p class="muted">Elegí un perfil para ver su tarjeta.</p>
+      <ul class="grid cards" role="list">
+      <li>
+        <a class="card" href="./erika.html" aria-label="Ver tarjeta de Erika">
+          <span class="card-avatar" aria-hidden="true">E</span>
+          <span class="card-title">Erika</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./gonza.html" aria-label="Ver tarjeta de Gonza">
+          <span class="card-avatar" aria-hidden="true">G</span>
+          <span class="card-title">Gonza</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./mariano.html" aria-label="Ver tarjeta de Mariano">
+          <span class="card-avatar" aria-hidden="true">M</span>
+          <span class="card-title">Mariano</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./lean.html" aria-label="Ver tarjeta de Lean">
+          <span class="card-avatar" aria-hidden="true">L</span>
+          <span class="card-title">Lean</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
 
   <footer>
-    <small>© Equipo — TP01</small>
+    <small>© Equipo 14 — TP01</small>
   </footer>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
 
