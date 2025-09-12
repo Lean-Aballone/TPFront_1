@@ -166,6 +166,7 @@ body.nav-open{overflow:hidden}
 }
 
 .card article {
+  width: 100%;
   padding: 1rem;
 }
 
@@ -176,9 +177,17 @@ body.nav-open{overflow:hidden}
 }
 
 .card p {
+  opacity: 0;
+  max-height: 0;
   font-size: .95rem;
   color: var(--muted);
   line-height: 1.4;
+  transition: opacity .8s ease, max-height .8s ease;
+}
+
+.card:hover p{
+  opacity: 1;
+  max-height: 200px; /* suficiente para el texto */
 }
 
 main > section > div.container {
