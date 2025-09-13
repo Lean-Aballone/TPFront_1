@@ -148,7 +148,6 @@ body.nav-open{overflow:hidden}
   color: #111827;
   text-decoration: none;
   transition: transform .15s ease, box-shadow .15s ease;
-  /*max-width: calc(60% - 5rem);*/
 }
 
 .card:hover,
@@ -187,7 +186,7 @@ body.nav-open{overflow:hidden}
 
 .card:hover p{
   opacity: 1;
-  max-height: 200px; /* suficiente para el texto */
+  max-height: 200px;
 }
 
 main > section > div.container {
