@@ -53,7 +53,6 @@ div.header-inner > h5 {
 }
 .nav a{color:#fff;opacity:.9;padding:.4rem .6rem;border-radius:8px}
 .nav a:hover{background:rgba(255,255,255,.08)}
-.nav a[aria-current="page"]{background:rgba(56,189,248,.16);outline:1px solid rgba(56,189,248,.35)}
 
 /* Bloquear scroll cuando el menú está abierto en mobile */
 body.nav-open{overflow:hidden}
