@@ -46,7 +46,17 @@ a{text-decoration:none;color:inherit}
 }
 
 /* Hamburguesa (botón) */
-.hamburger{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;cursor:pointer;border:1px solid rgba(255,255,255,.15);border-radius:10px;background:transparent;color:#fff}
+.hamburger{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;height:44px;
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:10px;
+  background:transparent;
+  color:var(--text-invert)
+}
 .hamburger:focus{outline:2px solid var(--ring);outline-offset:2px}
 .hamburger-lines{display:block;width:20px;height:2px;background:#fff;box-shadow:0 6px 0 #fff,0 -6px 0 #fff}
 
@@ -119,7 +129,6 @@ body.nav-open{overflow:hidden}
 .nav a + a{ margin-top:.25rem; }
 .nav a:hover{ background:rgba(255,255,255,.08); }
 .nav a[aria-current="page"]{ background:rgba(56,189,248,.16); outline:2px solid rgba(56,189,248,.35); }
-
 
 .hamburger{ background:transparent; }
 .hamburger:focus{ outline:2px solid var(--ring); outline-offset:2px; }
