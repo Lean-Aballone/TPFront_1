@@ -308,8 +308,16 @@ section.info {
 
 
 /* CARDS portada */
-.grid{ display:grid; gap:.75rem; grid-template-columns:1fr; }
-.cards{ list-style: none; margin: 0; padding: 0; }
+.cardSection {
+  background: var(--footer-gradient);
+  border-radius: 25px 25px 0 0;
+}
+.cardSection > p {
+  padding-top: 20px;
+  color: white;
+  font-weight: 500;
+}
+
 .cards .card{
   display:flex; align-items:center; gap:.75rem;
   background:#fff; color:#111827;
