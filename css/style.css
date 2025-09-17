@@ -13,9 +13,26 @@ a{text-decoration:none;color:inherit}
 .muted{color:var(--muted)}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:50;background:var(--header-bg);color:var(--header-fg);border-bottom:1px solid rgba(255,255,255,.08)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
-.brand{font-weight:800;letter-spacing:.2px;color:#fff}
+.site-header{
+  position:sticky;
+  top:0;z-index:50;
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*color:var(--header-fg);*/
+  border-bottom:2px solid rgb(30, 0, 30)}
+.header-inner{
+  display:grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items:center;
+  justify-content:end;
+}
+.brand{justify-self:center;grid-row:1/3;font-weight:800;letter-spacing:.2px;color:#fff}
+div.header-inner > h5 {
+  display: none;
+}
 
 /* Hamburguesa (botón) */
 .hamburger{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;cursor:pointer;border:1px solid rgba(255,255,255,.15);border-radius:10px;background:transparent;color:#fff}
