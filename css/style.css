@@ -139,8 +139,17 @@ body.nav-open{overflow:hidden}
 }
 .card-title{ font-weight:700; letter-spacing:.2px; }
 
-/* Breakpoints */
-@media (min-width:400px){ .container{padding:1.25rem} .grid{grid-template-columns:repeat(2,1fr)} }
+ /*Breakpoints */
+@media (min-width:400px){ 
+  .container{
+    padding:1.25rem;
+    padding-bottom:0;
+  } 
+  .grid{
+    grid-template-columns:repeat(2,1fr)
+  } 
+}
+
 @media (min-width:900px){
   .header-inner{gap:1rem}
   .hamburger{display:none}
