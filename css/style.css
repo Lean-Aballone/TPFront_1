@@ -319,9 +319,17 @@ section.info {
 }
 
 .cards .card{
-  display:flex; align-items:center; gap:.75rem;
-  background:#fff; color:#111827;
-  border:1px solid #e5e7eb; border-radius:14px; padding:.9rem 1rem;
+  display:flex;
+  flex-direction: column; 
+  align-items:center; 
+  gap:0;
+  background:#fff; 
+  color:#111827;
+  border:1px solid #e5e7eb; 
+  border-radius:14px; 
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 5px 5px 3px 3px #56036bc0;
   transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
 }
 .cards .card:hover, .cards .card:focus-visible{
@@ -374,32 +382,22 @@ section.info {
 
 .cards {
   display: grid;
-  gap: 1rem 5rem;
-  grid-template-columns: repeat(2, 20rem);
-  grid-auto-rows: auto;
+  gap: 1rem 2rem;
+  grid-template-columns: 1fr;
   list-style: none;
+  padding: 1rem;
   margin: 0;
   padding: 0;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  overflow: hidden;
-  color: #111827;
-  text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease;
-  /*max-width: calc(60% - 5rem);*/
+.card p {
+  opacity: 1;
 }
 
 .card:hover,
 .card:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  outline: none;
+  transform: translateY(5px);
+  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.671);
 }
 
 .card img {
@@ -411,27 +409,29 @@ section.info {
 
 .card article {
   width: 100%;
-  padding: 1rem;
+  padding: 0;
+}
+
+.card article hr {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
 }
 
 .card h3 {
+  padding: 0 1rem;
   margin: .5rem 0;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
 .card p {
-  opacity: 0;
-  max-height: 0;
-  font-size: .95rem;
-  color: var(--muted);
-  line-height: 1.4;
-  transition: opacity .8s ease, max-height .8s ease;
+  padding: 0 1rem;
 }
 
-.card:hover p{
+.card:hover > article > p {
   opacity: 1;
-  max-height: 200px; /* suficiente para el texto */
+  transform: translateY(0);
 }
 
 main > section > div.container {
