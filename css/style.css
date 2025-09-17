@@ -108,7 +108,8 @@ body.nav-open{overflow:hidden}
 .nav a{ display:block; color:#fff; opacity:.95; padding:.55rem .7rem; border-radius:8px; }
 .nav a + a{ margin-top:.25rem; }
 .nav a:hover{ background:rgba(255,255,255,.08); }
-.nav a[aria-current="page"]{ background:rgba(56,189,248,.16); outline:1px solid rgba(56,189,248,.35); }
+.nav a[aria-current="page"]{ background:rgba(56,189,248,.16); outline:2px solid rgba(56,189,248,.35); }
+
 
 .hamburger{ background:transparent; }
 .hamburger:focus{ outline:2px solid var(--ring); outline-offset:2px; }
