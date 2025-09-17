@@ -146,7 +146,7 @@ body.nav-open{overflow:hidden}
   .hamburger{display:none}
   .nav{
     position: static; transform:none; opacity:1; pointer-events:auto;
-    background:transparent; border:none; box-shadow:none; padding:0; margin:0;
+    border:none; box-shadow:none; padding:0.5rem; margin:0;
     display:flex; flex-direction:row; gap:.75rem; width:auto; height:auto;
   }
   .nav a + a{ margin-top:0; }
