@@ -1,4 +1,26 @@
-﻿:root{
+﻿:root {
+  /*La altura en que flota la navbar*/
+  --header-h:67px;
+
+  --header-gradient: linear-gradient(to top, #2F0743, #41295a);
+  --header-gradient: linear-gradient(to bottom, var(--gradient1) -100%, var(--gradient2))60%;
+  --footer-gradient: linear-gradient(to top, #1B0F29, #2F0743);
+
+  --gradient1: #2a214b;
+  --gradient2: #66134d;
+  --bg-main: #F8F7FB;
+  --bg-section-1: #E8E3F0;
+  --bg-section-2: #D1C4E9;
+  --bg-section-3: #B39DDB;
+
+  --text-main: #1E1E2F;
+  --text-muted: #6B6B83;
+  --text-invert: #F4F4F8;
+
+  --accent: #9C27B0;
+  --accent-hover: #7B1FA2;
+  --accent-alt: #38BDF8;
+
   --text-color:#f8fafc;
   --header-bg:#111827; --header-fg:#ffffff;
   --bg:#f8fafc; --fg:#111827;
