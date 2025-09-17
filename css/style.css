@@ -72,7 +72,7 @@ a{text-decoration:none;color:inherit}
   border-radius:12px;
   margin-top:.75rem
 }
-.nav a{color:#fff;opacity:.9;padding:.4rem .6rem;border-radius:8px}
+.nav a{color:var(--text-invert);opacity:.9;padding:.4rem .6rem;border-radius:8px}
 .nav a:hover{background:rgba(255,255,255,.08)}
 
 /* Bloquear scroll cuando el menú está abierto en mobile */
@@ -97,8 +97,10 @@ body.nav-open{overflow:hidden}
 }
 
 /* Overrides: mobile sheet nav and cards */
-:root{ --header-h:64px; }
-.header-inner{ min-height: var(--header-h); }
+.header-inner{ 
+  min-height: var(--header-h);
+  width: 100%;
+}
 
 /* BACKDROP (lo crea JS) */
 .backdrop{
@@ -110,7 +112,9 @@ body.nav-open{overflow:hidden}
 
 /* NAV móvil como sheet */
 .nav{
-  position: fixed; top: var(--header-h); right: .75rem;
+  position: fixed; 
+  top:var(--header-h); 
+  right: .45rem;
   width: min(86vw, 320px);
   max-height: calc(100dvh - var(--header-h) - .75rem);
   overflow: auto;
