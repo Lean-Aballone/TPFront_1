@@ -483,6 +483,12 @@ div.subcontainer {
   margin: 1.25rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -518,6 +524,15 @@ div.subcontainer {
   padding-left: 1rem;
   margin: 0.5rem 0;
 }
+
+
+    /*  MUSICA  */
+
+    svg {
+      max-width: 1rem;
+    }
+
+    /* END MUSICA */
   
 
 /*  END PERFIL PERSONAL */
@@ -588,6 +603,15 @@ div.subcontainer {
   .flex {
     flex-direction: row;
   }
+
+
+  .grid {
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
 
 
