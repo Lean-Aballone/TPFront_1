@@ -431,7 +431,111 @@ footer {
   margin: 0.3rem auto;
 } 
 
+
+
 /*  END Bitácora  */
+
+/*  PERFIL PERSONAL  */
+
+main.bg-img{
+  padding: 1rem;
+  background-color: var(--bg-main);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-size: cover;
+  background-attachment: local;
+  background-attachment: scroll;
+  background-position: 0% 83%;
+}
+
+main.bg-img-erika{
+  background-image: url("../img/lean_bg.jpg");
+}
+main.bg-img-gonza{
+  background-image: url("../img/lean_bg.jpg");
+}
+main.bg-img-mariano{
+  background-image: url("../img/lean_bg.jpg");
+}
+main.bg-img-lean{
+  background-image: url("../img/lean_bg.jpg");
+}
+
+main > div.container {
+  padding: 1rem 0;
+}
+
+.blur {
+    display: inline-block;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main.no-padding {
+    padding: 0;
+}
+
+div.subcontainer {
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(200, 200, 200, 0.637);
+  padding: 0.5rem;
+  margin: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 0.3rem;
+}
+
+.dark-bg {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+
+#img {
+  max-width: 250px;
+}
+
+#sectionAbout > article {
+  margin: 0.3rem;
+  padding: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(233, 233, 233, 0.589);
+}
+
+#sectionAbout h3, h4 {
+  margin: 0.3rem auto;
+} 
+
+#sectionAbout > article > p {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+
+    /*  MUSICA  */
+
+    svg {
+      max-width: 1rem;
+    }
+
+    /* END MUSICA */
+  
+
+/*  END PERFIL PERSONAL */
 
 @media (min-width:400px){
 
@@ -493,6 +597,21 @@ footer {
   }
 
   /*  END HEADER 600px  */
+
+
+
+  .flex {
+    flex-direction: row;
+  }
+
+
+  .grid {
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
 
 
@@ -605,6 +724,11 @@ footer {
 }
 @media (min-width:1200px){
   /*  MAIN 1200px */
+
+  div.subcontainer {
+    margin: 1.25rem auto;
+  }
+
   .container{max-width:1200px;}
   main > div > section > .container {
     min-height: 500px;
