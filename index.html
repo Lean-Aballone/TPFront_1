@@ -10,8 +10,21 @@
 <body>
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="./index.html">Equipo</a>
-
+      <div class="ifts-info">
+        <div>
+          <a id="ifts" target="_blank" href="https://ifts29.edu.ar/">
+            <h3>IFTS <span>N.°29</span></h3>
+          </a>
+        </div>
+        <h6>
+          <a target="_blank" href="https://buenosaires.gob.ar/ministerio-de-educacion">
+            <u> Ministerio de educación</u>
+          </a>
+        </h6>
+        <a target="_blank" href="https://buenosaires.gob.ar/inicio/">
+          <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
+        </a>
+      </div>
       <!-- Botón hamburguesa controlado por JS -->
       <button id="hamburger" class="hamburger" type="button"
               aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
@@ -26,45 +39,72 @@
         <a href="./mariano.html">Mariano</a>
         <a href="./lean.html">Lean</a>
       </nav>
+      <h5>Trabajo Práctico N° 1</h5>
+      <a id="rBA" target="_blank" href="https://buenosaires.gob.ar/inicio/">
+          <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
+      </a>
     </div>
   </header>
 
-  <main id="app" class="container page-content">
-    <section class="section">
+  <main >
+    <section class="info">
+      <div>
+        <article>
+          <h1>Desarrollo de sistemas web (front End)</h1>
+          <h3>Instituto de Formación Técnica Superior N° 29</h3>
+          <p>Grupo 14</p>
+          <p>Bienvenidos a nuestra primer entrega del trabajo practico para Desarrollo web, como grupo estamos entusiasmados por aprender a utilizar nuevas tecnologias. Los invitamos a ver como las iremos implementando a lo largo de las entregas.</p>
+        </article>
+      </div>
+    </section>
+    <div id="app" class="container page-content">
+      <section class="section">
       <h2>Integrantes grupo 14</h2>
       <p>Conocé al equipo del grupo 14. Cada tarjeta redirige a su página con más detalles.</p>
-      <p class="muted">Elegí un perfil para ver su tarjeta.</p>
-      <ul class="grid cards" role="list">
-      <li>
-        <a class="card" href="./erika.html" aria-label="Ver tarjeta de Erika">
-          <span class="card-avatar" aria-hidden="true">E</span>
-          <span class="card-title">Erika</span>
-        </a>
-      </li>
-      <li>
-        <a class="card" href="./gonza.html" aria-label="Ver tarjeta de Gonza">
-          <span class="card-avatar" aria-hidden="true">G</span>
-          <span class="card-title">Gonza</span>
-        </a>
-      </li>
-      <li>
-        <a class="card" href="./mariano.html" aria-label="Ver tarjeta de Mariano">
-          <span class="card-avatar" aria-hidden="true">M</span>
-          <span class="card-title">Mariano</span>
-        </a>
-      </li>
-      <li>
-        <a class="card" href="./lean.html" aria-label="Ver tarjeta de Lean">
-          <span class="card-avatar" aria-hidden="true">L</span>
-          <span class="card-title">Lean</span>
-        </a>
-      </li>
-    </ul>
-  </section>
-</main>
+      <div class="container cardSection">
+        <p>Elegí un perfil para ver su tarjeta.</p>
+        <div class="cards">
+          <a class="card" href="./erika.html">
+            <img src="img/test.jpg" alt="Erika">
+            <article>
+              <hr>
+              <h3>Erika</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article>
+          </a>
+          <a class="card" href="./gonza.html">
+            <img src="img/test.jpg" alt="Gonza">
+            <article>
+              <hr>
+              <h3>Gonza</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article>
+          </a>
+          <a class="card" href="./mariano.html">
+            <img src="img/test.jpg" alt="Mariano">
+            <article>
+              <hr>
+              <h3>Mariano</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article>
+          </a>
+          <a class="card" href="./lean.html">
+            <img src="img/carlina.png" alt="Lean">
+            <article>
+              <hr>
+              <h3>Lean</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+    </div>
+    
+  </main>
 
   <footer>
-    <small>© Equipo 14 — TP01</small>
+    <small>© 2025 — Grupo 14 — TP01: <a target="_blank" href="https://github.com/Lean-Aballone/TPFront_1"><u>Github</u></a></small>
   </footer>
   <script type="module" src="./js/main.js"></script>
 </body>
