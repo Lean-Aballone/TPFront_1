@@ -1,4 +1,4 @@
-/* ============== ERIKA THEME (AURORA GLASS) ============== */
+
 body.page-erika { 
   --erika-bg-1: #0f1226;
   --erika-bg-2: #151a32;
@@ -13,7 +13,7 @@ body.page-erika {
   --erika-radius: 18px;
   --erika-pad: clamp(16px, 2.5vw, 28px);
 
-  /* tema claro local */
+
   --erika-light-text: #0e1220;
   --erika-light-muted:#4b5568;
   --erika-light-bg: #f7f8fc;
@@ -32,7 +32,6 @@ body.page-erika {
   min-height: 100svh;
 }
 
-/* Grid sutil de fondo para dar textura, aislado al scope */
 .erika-scope {
   position: relative;
   isolation: isolate;
@@ -50,7 +49,7 @@ body.page-erika {
   z-index: -1;
 }
 
-/* Subnav pegajosa local */
+
 .page-erika .erika-subnav {
   position: sticky; top: 0; z-index: 30;
   display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
@@ -75,7 +74,6 @@ body.page-erika {
   box-shadow: 0 6px 18px #0006;
 }
 
-/* Tarjeta base */
 .page-erika .erika-card {
   background: linear-gradient(180deg, var(--erika-card-bg), transparent);
   border: 1px solid var(--erika-border);
@@ -84,7 +82,7 @@ body.page-erika {
   padding: var(--erika-pad);
 }
 
-/* Secciones */
+
 .page-erika .erika-section { 
   margin-block: clamp(18px, 5vw, 64px);
 }
@@ -97,16 +95,16 @@ body.page-erika {
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
-/* Badges / chips para habilidades */
+
 .page-erika .erika-badges { display: flex; gap: 10px; flex-wrap: wrap; }
 .page-erika .erika-badge {
   padding: 8px 12px; border-radius: 999px;
   border: 1px dashed color-mix(in oklab, white 28%, transparent);
   background: linear-gradient(180deg, #ffffff14, #ffffff06);
-  font-weight: 600; font-size: 14px; color: var(--erika-text);
+  font-weight: 600; font-size: 14px;
 }
 
-/* Grillas responsivas */
+
 .page-erika .erika-grid {
   display: grid; gap: clamp(12px, 2vw, 22px);
   grid-template-columns: 1fr;
@@ -122,20 +120,19 @@ body.page-erika {
   .page-erika .erika-grid.lg-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
 }
 
-/* CTA al pie */
+
 .page-erika .erika-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
 
-/* Animación de revelado */
 .page-erika .reveal { opacity: 0; transform: translateY(14px) scale(.98); transition: opacity .6s ease, transform .6s ease; }
+
 .page-erika .reveal.in { opacity: 1; transform: translateY(0) scale(1); }
 
-/* Estados de foco accesibles */
 .page-erika :where(a, button, .erika-link, .erika-btn):focus-visible {
   outline: 2px solid color-mix(in oklab, var(--erika-aurora-2) 70%, white 10%);
   outline-offset: 2px; border-radius: 10px;
 }
 
-/* Tema claro local (solo si .erika-scope[data-theme="light"]) */
+
 .page-erika .erika-scope[data-theme="light"] {
   color: var(--erika-light-text);
   background: var(--erika-light-bg);
@@ -150,7 +147,7 @@ body.page-erika {
 }
 .page-erika .erika-scope[data-theme="light"] .erika-title { color: #111827; -webkit-text-fill-color: initial; background: none; }
 
-/* Preferencias del usuario */
+
 @media (prefers-reduced-motion: reduce) {
   .page-erika * { transition: none !important; animation: none !important; }
 }
