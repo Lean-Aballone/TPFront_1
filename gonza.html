@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tarjeta — Gonza</title>
+  <title>Perfil — Gonza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="gonza-page">
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <div class="ifts-info">
@@ -24,12 +27,9 @@
           <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
         </a>
       </div>
-      <!-- Botón hamburguesa controlado por JS -->
-      <button id="hamburger" class="hamburger" type="button"
-              aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+      <button id="hamburger" class="hamburger" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
         <span class="hamburger-lines" aria-hidden="true"></span>
       </button>
-
       <nav id="site-nav" class="nav" role="navigation" aria-label="Navegación principal">
         <a href="./index.html">Portada</a>
         <a href="./bitacora.html">Bitácora</a>
@@ -40,43 +40,203 @@
       </nav>
       <h5>Trabajo Práctico N° 1</h5>
       <a id="rBA" target="_blank" href="https://buenosaires.gob.ar/inicio/">
-          <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
+        <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
       </a>
     </div>
   </header>
 
-  <main id="app" class="no-padding bg-img bg-img-gonza">
-    <div class="container page-content blur">
-      <div class="container section subcontainer">
-        <section class="flex">
-          <img id="img" src="img/test.jpg" alt="Gonza">
-          <article class="dark-bg">
-            <h2>Nombre Apellido</h2>
-            <p>Ubicación actual: </p>
-            <p>Formación: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab.</p>
-            <p>Edad: Lorem</p>
-            <p>Mascota: Lorem ipsum</p>
-          </article>
-        </section>
-        <section id="sectionAbout" class="">
-          <article>
-            <h3>Habilidades:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sapiente.</p>
-          </article>
-          <article>  
-            <h3>Películas favoritas:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sapiente.</p>
-          </article>
-          <article>
-            <h3>Discos o música favorita:</h3>
-            <div class="grid">
-              <p id="musica1" class="dark-bg">musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-              <p id="musica2" class="dark-bg" >musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-              <p id="musica3" class="dark-bg">musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-            </div>
-          </article>
+  <main id="main-content" class="gonza">
+    <div class="gonza__grid">
+      <nav class="gonza-nav" data-js="section-nav" aria-label="Secciones personales">
+        <div class="gonza-nav__actions">
+          <button type="button" class="gonza-nav__btn" data-js="theme-toggle" aria-pressed="false" aria-label="Alternar modo oscuro">
+            <span data-js="theme-toggle-label">Modo oscuro</span>
+          </button>
+          <button type="button" class="gonza-nav__btn gonza-nav__btn--accent" data-js="random-highlight" aria-label="Resaltar habilidades y películas al azar">
+            Random highlight
+          </button>
+        </div>
+        <ul class="gonza-nav__links">
+          <li><a class="gonza-nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="gonza-nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="gonza-nav__link" href="#habilidades">Habilidades</a></li>
+          <li><a class="gonza-nav__link" href="#peliculas">Películas</a></li>
+          <li><a class="gonza-nav__link" href="#musica">Música</a></li>
+          <li><a class="gonza-nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="gonza__content">
+        <article class="gonza-card gonza-hero__card" id="inicio" aria-labelledby="perfil-gonza">
+  <figure class="gonza-hero__avatar">
+    <img src="img/gonzalo-profile.jpg" width="240" height="240" loading="lazy" alt="Retrato de Gonzalo trabajando frente a su laptop">
+  </figure>
+  <div class="gonza-hero__content">
+    <span class="gonza-chip">Tucumán, ARG</span>
+    <h1 class="gonza-hero__title" id="perfil-gonza">Gonzalo - 36 años</h1>
+    <p class="gonza-hero__subtitle">Full Stack Developer</p>
+    <p class="gonza-hero__text">
+      Desarrollador Full Stack con 4+ años construyendo aplicaciones web de alto impacto.
+      Especializado en stack MERN y Next.js.
+    </p>
+    <dl class="gonza-hero__meta">
+      <div class="gonza-hero__meta-item">
+        <dt>Experiencia</dt>
+        <dd>4+ años</dd>
       </div>
-    </section>
+      <div class="gonza-hero__meta-item">
+        <dt>Stack actual</dt>
+        <dd>MERN · Next.js · CI/CD</dd>
+      </div>
+      <div class="gonza-hero__meta-item">
+        <dt>Disponibilidad</dt>
+        <dd>Freelance / Remoto</dd>
+      </div>
+    </dl>
+  </div>
+</article>
+
+        <article class="gonza-card gonza-card--about" id="sobre-mi" aria-labelledby="sobre-mi-title">
+  <header class="gonza-card__header">
+    <h2 class="gonza-card__title" id="sobre-mi-title">Sobre mí</h2>
+    <p class="gonza-card__lead">
+      Enfoque en arquitectura backend, bases de datos e infraestructura para lograr
+      escalabilidad, seguridad y rendimiento.
+    </p>
+  </header>
+  <p class="gonza-card__body">
+    Actualmente diseño y desarrollo el sistema de aplicaciones para una organización con más de 120 usuarios activos diarios. Me muevo cómodo entre el
+    backend y el frontend, priorizando código mantenible y centrado en el usuario.
+  </p>
+
+  <ul class="timeline" aria-label="Hitos profesionales de Gonzalo">
+    <li class="timeline__item">
+      <span class="timeline__marker" aria-hidden="true"></span>
+      <div class="timeline__body">
+        <time class="timeline__date" datetime="2020">2020 — Presente</time>
+        <p class="timeline__title">Desarrollador de software · Full-stack (enfoque en backend) — Organismo gubernamental</p>
+        <p class="timeline__description">
+          Diseño de arquitectura, backend y datos para webbApp
+          (+120 usuarios/día).
+        </p>
+      </div>
+    </li>
+
+    <li class="timeline__item">
+      <span class="timeline__marker" aria-hidden="true"></span>
+      <div class="timeline__body">
+        <time class="timeline__date" datetime="2023">2023</time>
+        <p class="timeline__title">Global Learning</p>
+        <p class="timeline__description">
+          Proyectos intensivos con JavaScript y React avanzado combinados con IA, aplicados a problemas reales.
+        </p>
+      </div>
+    </li>
+
+    <li class="timeline__item">
+      <span class="timeline__marker" aria-hidden="true"></span>
+      <div class="timeline__body">
+        <time class="timeline__date" datetime="2015">2015 — 2019</time>
+        <p class="timeline__title">Administrador de Redes — Ministerio de Educación</p>
+        <p class="timeline__description">
+          Gestión de infraestructura de red y soporte técnico a equipos educativos.
+        </p>
+      </div>
+    </li>
+  </ul>
+</article>
+
+        <article class="gonza-card gonza-card--skills" id="habilidades" aria-labelledby="habilidades-title">
+          <header class="gonza-card__header">
+            <h2 class="gonza-card__title" id="habilidades-title">Habilidades</h2>
+            <p class="gonza-card__lead">Stack orientado a la construcción de design systems robustos y productos escalables.</p>
+          </header>
+          <div class="skill-matrix" data-js="skill-matrix">
+            <div class="skill-matrix__item" data-js="skill-item" style="--skill-level: 0.95;">
+              <span class="skill-matrix__label">HTML + CSS Architecture</span>
+              <span class="skill-matrix__level">Nivel experto</span>
+              <span class="skill-matrix__bar"></span>
+            </div>
+            <div class="skill-matrix__item" data-js="skill-item" style="--skill-level: 0.9;">
+              <span class="skill-matrix__label">TypeScript &amp; React</span>
+              <span class="skill-matrix__level">Nivel avanzado</span>
+              <span class="skill-matrix__bar"></span>
+            </div>
+            <div class="skill-matrix__item" data-js="skill-item" style="--skill-level: 0.85;">
+              <span class="skill-matrix__label">Accesibilidad AA/AAA</span>
+              <span class="skill-matrix__level">Nivel avanzado</span>
+              <span class="skill-matrix__bar"></span>
+            </div>
+            <div class="skill-matrix__item" data-js="skill-item" style="--skill-level: 0.8;">
+              <span class="skill-matrix__label">Design Ops &amp; Sistemas</span>
+              <span class="skill-matrix__level">Nivel sólido</span>
+              <span class="skill-matrix__bar"></span>
+            </div>
+            <div class="skill-matrix__item" data-js="skill-item" style="--skill-level: 0.75;">
+              <span class="skill-matrix__label">Motion design suave</span>
+              <span class="skill-matrix__level">Nivel intermedio</span>
+              <span class="skill-matrix__bar"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gonza-card gonza-card--movies" id="peliculas" aria-labelledby="peliculas-title">
+          <header class="gonza-card__header">
+            <h2 class="gonza-card__title" id="peliculas-title">Películas favoritas</h2>
+            <p class="gonza-card__lead">Historias que inspiran mi manera de narrar interfaces y atmósferas visuales.</p>
+          </header>
+          <ul class="gonza-list" data-js="movie-list">
+           <ul class="gonza-list" data-js="movie-list">
+  <li class="gonza-list__item" data-js="movie-item">
+    <strong>Black Hawk Down</strong>
+    <span>Ridley Scott • 2001</span>
+  </li>
+
+  <li class="gonza-list__item" data-js="movie-item">
+    <strong>Top Gun: Maverick</strong>
+    <span>Joseph Kosinski • 2022</span>
+  </li>
+
+  <li class="gonza-list__item" data-js="movie-item">
+    <strong>Star Wars: Episodio I – La amenaza fantasma</strong>
+    <span>George Lucas • 1999</span>
+  </li>
+</ul>
+        </article>
+
+        <article class="gonza-card gonza-card--music" id="musica" aria-labelledby="musica-title">
+          <header class="gonza-card__header">
+            <h2 class="gonza-card__title" id="musica-title">Música favorita</h2>
+            <p class="gonza-card__lead">Playlists para entrar en modo construcción y sostener la energía creativa.</p>
+          </header>
+          <ul class="gonza-list gonza-list--dense">
+  <li class="gonza-list__item">
+    <strong>In the End</strong>
+    <span>Himno nu-metal con piano hook; entra suave y mantiene foco. (Hybrid Theory • 2000)</span>
+  </li>
+  <li class="gonza-list__item">
+    <strong>Numb</strong>
+    <span>Melódico y directo; perfecto para cerrar sprints. (Meteora • 2003)</span>
+  </li>
+  <li class="gonza-list__item">
+    <strong>Faint</strong>
+    <span>Rápido y enérgico; sube el pulso y el ritmo. (Meteora • 2003)</span>
+  </li>
+</ul>
+
+        </article>
+
+        <article class="gonza-card gonza-card--contact" id="contacto" aria-labelledby="contacto-title">
+          <header class="gonza-card__header">
+            <h2 class="gonza-card__title" id="contacto-title">Contacto</h2>
+            <p class="gonza-card__lead">Hablemos de ideas que mezclen data, experiencia y propósito.</p>
+          </header>
+          <address class="gonza-contact">
+            <a href="mailto:gonzaloalejandro720@gmail.com">gonzaloalejandro720@gmail.com</a>
+            <a href="https://www.linkedin.com/in/gonzalo-villafane/" target="_blank" rel="noopener">in/gonzalo-villafane/</a>
+            <p>Disponible en horario GMT-3 · Español / Inglés</p>
+          </address>
+        </article>
+      </div>
     </div>
   </main>
 

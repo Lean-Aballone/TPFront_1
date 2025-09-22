@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tarjeta — Mariano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="mariano-page">
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <div class="ifts-info">
@@ -24,12 +27,10 @@
           <img id="ba-logo" src="img/logo_ba__buenos_aires_ciudad.png" alt="Buenos Aires Ciudad">
         </a>
       </div>
-      <!-- Botón hamburguesa controlado por JS -->
       <button id="hamburger" class="hamburger" type="button"
               aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
         <span class="hamburger-lines" aria-hidden="true"></span>
       </button>
-
       <nav id="site-nav" class="nav" role="navigation" aria-label="Navegación principal">
         <a href="./index.html">Portada</a>
         <a href="./bitacora.html">Bitácora</a>
@@ -45,38 +46,82 @@
     </div>
   </header>
 
-  <main id="app" class="no-padding bg-img bg-img-mariano">
-    <div class="container page-content blur">
-      <div class="container section subcontainer">
-        <section class="flex">
-          <img id="img" src="img/test.jpg" alt="Mariano">
-          <article class="dark-bg">
-            <h2>Nombre Apellido</h2>
-            <p>Ubicación actual: </p>
-            <p>Formación: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab.</p>
-            <p>Edad: Lorem</p>
-            <p>Mascota: Lorem ipsum</p>
-          </article>
-        </section>
-        <section id="sectionAbout" class="">
-          <article>
-            <h3>Habilidades:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sapiente.</p>
-          </article>
-          <article>  
-            <h3>Películas favoritas:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sapiente.</p>
-          </article>
-          <article>
-            <h3>Discos o música favorita:</h3>
-            <div class="grid">
-              <p id="musica1" class="dark-bg">musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-              <p id="musica2" class="dark-bg" >musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-              <p id="musica3" class="dark-bg">musica <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M532 71C539.6 77.1 544 86.3 544 96L544 400C544 444.2 501 480 448 480C395 480 352 444.2 352 400C352 355.8 395 320 448 320C459.2 320 470 321.6 480 324.6L480 207.9L256 257.7L256 464C256 508.2 213 544 160 544C107 544 64 508.2 64 464C64 419.8 107 384 160 384C171.2 384 182 385.6 192 388.6L192 160C192 145 202.4 132 217.1 128.8L505.1 64.8C514.6 62.7 524.5 65 532.1 71.1z"/></svg></p>
-            </div>
-          </article>
+  <main class="mariano-main">
+    <div class="profile-card">
+      
+      <div class="profile-header">
+        <img class="profile-avatar" src="img/kity.jpeg" alt="Avatar de Mariano">
+        <div class="profile-info">
+          <h1>Mariano Fabián G</h1>
+          <p class="location-age">51 años, desde Morón, Buenos Aires</p>
+          <p class="education">Estudiante de la Tecnicatura en Desarrollo de Software</p>
+        </div>
       </div>
-    </section>
+
+      <div class="profile-section">
+        <h2>Mi Filosofía</h2>
+        <p class="intro-text">
+          Siempre he creído que la curiosidad es el verdadero motor del conocimiento. Mi pasión por la matemática no es solo sobre números; es sobre encontrar la lógica y la elegancia en sistemas complejos. Esa misma pasión me llevó al mundo del desarrollo de software, primero con lenguajes estructurados como Java y C#, y ahora sumergiéndome en el dinámico universo del front-end.
+        </p>
+        <p class="intro-text">
+          Cuando no estoy frente a una pantalla, probablemente me encuentres explorando nuevos documentales, planeando mi próxima estrategia en algún videojuego retro, o simplemente disfrutando de la compañía de mi gato, Milo.
+        </p>
+      </div>
+
+      <div class="profile-section">
+        <h2>Habilidades y Tecnologías</h2>
+        <ul class="tag-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git & GitHub</li>
+          <li>Java</li>
+          <li>C#</li>
+          <li>Resolución de Problemas</li>
+          <li>Lógica Matemática</li>
+        </ul>
+      </div>
+
+      <div class="profile-section">
+        <h2>Intereses y Aficiones</h2>
+        <div class="interests-grid">
+            <div class="interest-category">
+                <h3>Cine</h3>
+                <ul class="simple-list">
+                    <li>Matrix</li>
+                    <li>Guardianes de alta mar</li>
+                    <li>La sociedad de los poetas muertos</li>
+                </ul>
+            </div>
+            <div class="interest-category">
+                <h3>Música</h3>
+                 <ul class="simple-list">
+                    <li>Jazz</li>
+                    <li>Electro</li>
+                    <li>House</li>
+                </ul>
+            </div>
+            <div class="interest-category">
+                <h3>Hobbies</h3>
+                 <ul class="simple-list">
+                    <li>Videojuegos Retro</li>
+                    <li>Documentales de Ciencia</li>
+                    <li>Tutorías de Matemáticas</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      <div class="profile-section quote-section">
+          <blockquote class="quote">
+              “La curiosidad es mi motor de aprendizaje”
+          </blockquote>
+      </div>
+
+      <div class="interactive-section">
+        <button id="theme-switcher-btn">Cambiar Color de Acento</button>
+      </div>
+
     </div>
   </main>
 
