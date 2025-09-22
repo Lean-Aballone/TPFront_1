@@ -49,7 +49,6 @@ p.playable-song{
 }
 
 p.playable-song:hover{
-    /* background-color: rgba(181, 22, 202, 0.322);    */ 
 	outline: thick double rgba(6, 29, 128, 0.6);
 	text-decoration: underline;
 }
