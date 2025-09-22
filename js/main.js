@@ -32,7 +32,7 @@ const initHamburger = () => {
     btn.setAttribute("aria-expanded", "true");
     document.body.classList.add("nav-open");
     createBackdrop();
-    nav.querySelector("a")?.focus(); // foco al primer link
+    nav.querySelector("a")?.focus();
   };
   const closeNav = () => {
     nav.classList.remove("is-open");
@@ -66,9 +66,6 @@ const initHamburger = () => {
 };
 
 
-/**
- * Controla el modo oscuro/claro y persiste la preferencia del usuario.
- */
 const toggleTheme = () => {
   const trigger = document.querySelector('[data-js="theme-toggle"]');
   if (!trigger) return;
@@ -132,9 +129,7 @@ const toggleTheme = () => {
   });
 };
 
-/**
- * Resalta aleatoriamente una habilidad y una película para explorar contenido.
- */
+
 const randomHighlight = () => {
   const trigger = document.querySelector('[data-js="random-highlight"]');
   if (!trigger) return;
@@ -177,9 +172,7 @@ const randomHighlight = () => {
   }
 };
 
-/**
- * Aplica scroll suave a los anclajes del navbar fijo respetando reduced motion.
- */
+
 const smoothScrollInit = () => {
   const nav = document.querySelector('[data-js="section-nav"]');
   if (!nav) return;
@@ -204,9 +197,7 @@ const smoothScrollInit = () => {
   });
 };
 
-/**
- * Inicializa los comportamientos específicos de gonza.html.
- */
+
 const initGonzaFeatures = () => {
   toggleTheme();
   randomHighlight();
@@ -215,3 +206,25 @@ const initGonzaFeatures = () => {
 
 document.addEventListener('DOMContentLoaded', initHamburger);
 document.addEventListener('DOMContentLoaded', initGonzaFeatures);
+
+const themeSwitcherButton = document.getElementById('theme-switcher-btn');
+
+
+if (themeSwitcherButton) {
+  
+  const accentColors = ['#00FFFF', '#39FF14', '#FF5733', '#F89BFF'];
+  let currentColorIndex = 0;
+
+  const changeAccentColor = () => {
+   
+    currentColorIndex = (currentColorIndex + 1) % accentColors.length;
+    
+   
+    const newColor = accentColors[currentColorIndex];
+    
+  
+    document.body.style.setProperty('--mariano-accent-color', newColor);
+  };
+
+  themeSwitcherButton.addEventListener('click', changeAccentColor);
+}
