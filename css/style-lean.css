@@ -1,0 +1,119 @@
+#matrix {
+  background-image: url("//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Digital_rain_animation_medium_letters_shine.gif/250px-Digital_rain_animation_medium_letters_shine.gif");
+  text-align: justify;
+}
+
+#rocky {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/5/53/Rocky_balboa.jpeg");
+  background-position: 5% 83%;
+  text-align: justify;
+}
+
+#backtofuture {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/delorean-dmc-12-replica-de-regreso-al-futuro-1648985337.jpg");
+  background-position: 45% 83%;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.black-text {
+  color: black;
+}
+
+.argumento {
+  max-height: 350px;   
+  overflow: scroll;    
+}
+
+#sectionAbout > article > div.habilidades {
+  flex-direction: column;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.movies-container {
+  gap: 1rem;
+}
+
+.white-bg {
+  padding: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(233, 233, 233, 0.45);
+}
+
+p.playable-song{
+    cursor: pointer;
+}
+
+p.playable-song:hover{
+	outline: thick double rgba(6, 29, 128, 0.6);
+	text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.playing {
+    background-color: rgba(181, 22, 202, 0.322);    
+	outline: thick double rgba(6, 29, 128, 0.6);
+    animation: pulse 1.0s infinite;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+#sectionAbout > article > .no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.bye {
+    animation: bye 12s infinite;
+}
+
+@keyframes bye {
+
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+div.subcontainer {
+    margin: 1.25rem auto;
+}
+
+.movies-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width: 1000px){
+  .movies-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width: 1000px){
+    .container {
+        max-width: 1200px;
+    }
+}
