@@ -296,7 +296,7 @@ img {
 .section {
   background: #fff;
   color: #111;
-  padding: 1rem;
+  padding: 1rem 0.3rem;
   padding-bottom: 0;
 }
 
@@ -391,12 +391,14 @@ section.info {
 }
 
 section.info {
-  height: 80lvh;
+  width: 100%;
+  height: 90svh;
 }
 
 .info div {
   align-items: flex-start;
   height: 100%;
+  overflow: scroll;
 }
 
 .info div article {
@@ -406,7 +408,8 @@ section.info {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 50lvh;
+  min-height: 50lvh;
+  flex: 1;
 }
 
 .info div article h1 {
@@ -461,7 +464,7 @@ section.info {
   gap: 1rem 2rem;
   grid-template-columns: 1fr;
   list-style: none;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 0;
 }
 
@@ -667,6 +670,7 @@ div.subcontainer {
 /*  END PERFIL PERSONAL */
 
 
+@media (min-width:400px) {
 
   header>.header-inner>.ifts-info>h6 {
     display: block;
@@ -686,22 +690,31 @@ div.subcontainer {
     display: inline;
   }
 
+  .section{
+    padding: 1rem;
+  }
+
 
   section.info {
     height: 60lvh;
   }
 
-
-  .cards {
-    margin: 0 calc(8vw + 20px);
+  .info div {
+    height: 100%;
   }
 
 
+  .cards {
+    margin: 0 calc(8vw + 20px);
+    padding: 1rem;
+  }
+
+}
 
 @media (min-width:600px) {
 
   section.info {
-    height: 70lvh;
+    height: 500px;
   }
 
   .info div {
@@ -888,6 +901,10 @@ div.subcontainer {
 
   main>div.container {
     max-width: 100%;
+  }
+
+  section.info {
+    height: 60svh;
   }
 
   .cards {
